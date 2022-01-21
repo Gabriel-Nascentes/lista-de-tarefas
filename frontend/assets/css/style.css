@@ -1,0 +1,138 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Variáveis */
+:root{
+    --main-color: #F2855E;
+    --text1-color: #a76140;
+    --text2-color: #194769;
+    --bg-color: #F6F6E9;
+
+}
+/* Body */
+body{
+    background: var(--bg-color);
+    text-align: center;
+    font-style: 'Roboto Condensed', sans-serif;
+}
+
+/* Fontes */
+h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: var(--main-color);
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Geral */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;    
+}
+
+.coluns{
+    margin: 15px;
+    padding: 15px;
+}
+
+.img{
+    padding: 50px 0;
+    width: 350px;
+    height: auto;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    
+}
+.row h1 {
+    padding: 25px;
+}
+
+.row p{
+    padding: 10px 0;
+}
+#primeira-linha {
+    color: var(--text1-color);  
+}
+#segunda-linha{
+    color: var(--text2-color);
+}
+#terceira-linha{
+    color: var(--text1-color);
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#user-input{
+    color: var(--text2-color);
+    width: 70%;
+    padding: 5px;
+    height: 30px;
+    border: 1px solid var(--main-color);
+    background: var(--bg-color);
+}
+
+#enter{
+    margin-left: 10px;
+    border: none;
+}
+#enter #icon{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--bg-color);
+    color: var(--main-color);
+    display: inline-block;
+}
+#enter #icon{
+    width: 25px;
+    height: 25px;
+}
+
+li{
+    list-style: none;
+    background:var(--text2-color) ;
+    color: var(--main-color);
+    border: 1px solid var(--text2-color);
+    margin: 10px;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5 ease;
+}
+li > button {
+    z-index: 1;
+    padding-right: 5px;
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right !important;
+    color:var(--text2-color);
+    font-weight: 800;
+}
+
+/* Check  e delete:*/
+.done {
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+.delete {
+    display: none;
+}

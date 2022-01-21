@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Lista de Tarefas" content="Estudo">
+    <meta name="Autor" content="Gabriel Nascentes">
+    <title>Lista de Tarefas</title>
+    <!-- Css do projeto-->
+    <link rel="stylesheet" href="/frontend/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="coluns">
+            <img class="img" src="/frontend/assets/img/to-do.svg" alt="Uma mulher caminhando para concluir um item da lista.">
+        </div>
+        <div class="coluns">
+            <div class="row">
+                <h1>Lista de Tarefas:</h1>
+                <p id="primeira-linha">Insira texto no campo de entrada para adicionar itens à sua lista.</p>
+                <p id="segunda-linha">Clique no item para marcá-lo como atividade concluída.</p>
+                <p id="terceira-linha">Clique no "X" para remover o item da sua lista.</p>
+            </div>
+            <div class="row">
+                <div class="dados">
+                    <input id="user-input" type="text" placeholder="Insira uma tarefa...">
+                    <button id="enter"><ion-icon id="icon" name="checkbox-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lista">
+                    <ul class="lista" id="ul">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script do projeto -->
+    <script src="../../script.js"></script>
+    <!-- Icons fonte-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
